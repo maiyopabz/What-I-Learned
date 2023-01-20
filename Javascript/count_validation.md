@@ -2,7 +2,7 @@
 
 I created a quick function to count remain input when inserting input into forms.
 
-I created a class called `count_char`for the function.
+I created a class called `count_char`for the function.<br>
 I created a class called `text-orange` for the css.
 
 `Example:`
