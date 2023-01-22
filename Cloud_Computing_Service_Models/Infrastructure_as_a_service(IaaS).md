@@ -34,7 +34,7 @@ Cloud service providers offer some of the highest levels of onsite security, inc
 
 Since data center management is the core business function of a cloud service provider, they can focus exclusively on ensuring the physical architecture of their system is equipped with the latest hardware and firmware.
 
-<strong>Ecommerce:</strong>
+<strong>`Ecommerce:`</strong>
 
 Online retail businesses benefit tremendously from the core benefits of IaaS.
 
@@ -46,7 +46,7 @@ Furthermore, due to the seasonal nature of retail product demand, e-commerce sit
 
 The flexibility of IaaS cloud services makes them a perfect candidate for e-commerce businesses that require flexible on demand, resource scalability to keep up with business growth and traffic fluctuations.
 
-<strong>Software Development/Testing:</strong>
+<strong>`Software Development/Testing:`</strong>
 
 Often times organizations require temporary computing, storage and network resources to test applications or develop new software.
 
@@ -67,7 +67,7 @@ Facilitating the infrastructure for AI and Iot projects on premises would likely
 small to medium sized businesses due to the budgetary constraints and other resource limitations.
 ```
 
-<strong>Disaster recovery/Data Storage:</strong>
+<strong>`Disaster recovery/Data Storage:`</strong>
 
 Another very common use case for IaaS is data storage, data backups and disaster recovery.
 
