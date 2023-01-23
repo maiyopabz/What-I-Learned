@@ -9,4 +9,4 @@ Compare this to SAS applications whereby every single component of the physical 
 
 SAS applications remain the industry leaders over the last three years, followed by IaaS and PaaS, respectively.
 
-Some projection models also anticipate a higher growth rate of IaaS and PaaS models moving into the future.
+Some projection models also anticipate a higher growth rate of IaaS and PaaS models moving into the future...
