@@ -44,4 +44,4 @@ Example:
 
 We are allowing users to use some services in AWS.
 So these policies will help us define permissions of our users.
-And so in AWS, you don't allow everyone to do everything that would be catastrophic, because a new user could basically launch so many services and they will cost you a lot of money or would be valid for security. So in AWS, you apply a principle called `the least privilege principle`. So you don't give more permissions than a user needs.
+And so in AWS, you don't allow everyone to do everything that would be catastrophic, because a new user could basically launch so many services and they will cost you a lot of money or would be valid for security. So in AWS, you apply a principle called `the least privilege principle`. So you don't give more permissions than a user needs..
