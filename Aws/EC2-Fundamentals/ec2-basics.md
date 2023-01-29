@@ -34,4 +34,4 @@ So we have lots and lots of options and as you'll see in the hands-on, even more
   - > Anything you can think of
 - > The EC2 User Data Script runs with the root user
 
-![login]()
+![Screenshot](https://github.com/maiyopabz/What-I-Learned/blob/main/Screenshots/ec2_instance_type_example.jpg)
