@@ -4,4 +4,8 @@
 - > Not necessary to detach volume to do snapshot, but recommended.
 - > Can copy snapshots across AZ or Region.
 
-![Screenshot](C:\Users\Maiyo-Pc2021\Desktop\repo\what_I_learned\What-I-Learned\Screenshots\ebs_snapshots.jpg)
+![Screenshot](https://github.com/maiyopabz/What-I-Learned/blob/main/Screenshots/ebs_snapshots.jpg)
+
+#EBS Snapshots Features
+
+- > ![Screenshot](https://github.com/maiyopabz/What-I-Learned/blob/main/Screenshots/ebs_snapshot_features.jpg)
