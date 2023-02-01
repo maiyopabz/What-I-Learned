@@ -54,3 +54,27 @@ CREATE TABLE unique_cats2 (
 );
 
 ```
+
+#The final thing and most useful thing is setting up auto increment on your primary key fields.
+
+```ts
+
+//Auto-increment
+
+CREATE TABLE unique_cats3 (
+    cat_id INT AUTO_INCREMENT,
+    name VARCHAR(100),
+    age INT,
+    PRIMARY KEY (cat_id)
+);
+
+//or
+
+CREATE TABLE unique_cats3 (
+    cat_id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    age INT,
+
+);
+
+```
