@@ -28,14 +28,14 @@ VALUES ('Ringo', 'Tabby', 4),
 - > R-EAD
 
 ```ts
-//The SELECT claise:
+//The SELECT clause:
 
 SELECT * FROM cats;
 // the * mean all
 // we dont always need all we can also just grab just the `name`, `age` etc,
 //we can also combine them by saying
 SELECT name, age FROM cats;
-// we well only grab those specific select
+// we will only grab those specific select
 ```
 
 ```ts
