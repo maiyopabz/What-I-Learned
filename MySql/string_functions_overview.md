@@ -34,3 +34,35 @@ SELECT SUBSTRING(title, 1, 10) AS 'short title' FROM books;
 
 SELECT SUBSTR(title, 1, 10) AS 'short title' FROM books;
 ```
+
+#Combining String Functions
+
+```ts
+SELECT CONCAT
+    (
+        SUBSTRING(title, 1, 10),
+        '...'
+    ) AS 'short title'
+FROM books;
+
+//another example
+
+SELECT
+    CONCAT(
+       SUBSTR(author_fname, 1, 1),
+       '.',
+       SUBSTR(author_lname, 1, 1),
+       '.',
+    ) AS author_initials
+    FROM
+    books;
+
+```
+
+- > https://codebeautify.org/sqlformatter (SQL FORMATTER)
+
+#Replace
+
+```ts
+//We have to provide three different string arguments.
+```
