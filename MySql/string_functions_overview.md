@@ -65,6 +65,9 @@ SELECT
 
 ```ts
 //We have to provide three different string arguments.
+// first is content, second would be part you want to replace, third is the content you want to insert.
+//case sensitive
+
 SELECT REPLACE('Hello World', 'Hell', '%$#@');
 
 SELECT REPLACE('Hello World', 'l', '7');
@@ -79,4 +82,24 @@ SELECT
 SELECT REPLACE(title, 'e ', '3') FROM books;
 
 SELECT REPLACE(title, ' ', '-') FROM books;
+
+//note also check and  the
+
+SELECT REPLACE(tittle, ' ', '-') FROM books;
+```
+
+#Reverse
+
+```ts
+
+SELECT REVERSE('Hello World');
+
+SELECT REVERSE('meow meow');
+
+SELECT REVERSE(author_fname) FROM books;
+
+SELECT CONCAT('woof', REVERSE('woof'));
+
+SELECT CONCAT(author_fname, REVERSE(author_fname)) FROM books;
+
 ```
