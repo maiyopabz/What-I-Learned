@@ -115,3 +115,20 @@ SELECT author_lname, CHAR_LENGTH(author_lname) AS 'length' FROM books;
 
 SELECT CONCAT(author_lname, ' is ', CHAR_LENGTH(author_lname), ' characters long') FROM books;
 ```
+
+#UPPER() and LOWER()
+
+```ts
+//Change A String's Case
+//this help us change casing of a string to upper and lower case
+
+SELECT UPPER('Hello World');
+
+SELECT LOWER('Hello World');
+
+SELECT UPPER(title) FROM books;
+
+SELECT CONCAT('MY FAVORITE BOOK IS ', UPPER(title)) FROM books;
+
+SELECT CONCAT('MY FAVORITE BOOK IS ', LOWER(title)) FROM books;
+```
