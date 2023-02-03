@@ -27,4 +27,38 @@ SELECT DISTINCT CONCAT(author_fname,' ', author_lname) FROM books;
 
 SELECT DISTINCT author_fname, author_lname FROM books;
 
+//note: So that's distinct. We use that a lot.
+//Make sure it comes after select before one or more column names.
+
+```
+
+#ORDER BY
+
+```ts
+SELECT * FROM books ORDER BY author_lname;
+
+SELECT * FROM books ORDER BY author_lname DESC;
+
+SELECT * FROM books ORDER BY released_year;
+
+//we can also order by multiple columns
+
+SELECT author_lname, released_year, title FROM books ORDER BY author_lname,released_year;
+
+//we can also do sort by desc.
+SELECT book_id, author_fname, author_lname, pages
+FROM books ORDER BY 2 desc;
+
+//we can also order by columns that aren't necessarily part of the table, but our results are values that we've asked SQL for.
+
+//For example, remember that we can do things like can cat select concat?
+//I hope you get the picture there by using an alias.
+//I can then reference that name and order by later on.
+
+SELECT CONCAT(author_fname, '', author_lname) AS author FROM books ORDER BY author;
+
+SELECT book_id, author_fname, author_lname, pages
+FROM books ORDER BY author_lname, author_fname;
+
+
 ```
