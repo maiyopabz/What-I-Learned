@@ -138,3 +138,21 @@ WHERE author_fname LIKE '____';
 SELECT * FROM books
 WHERE author_fname LIKE '_a_';
 ```
+
+#Escaping Wildcards
+
+```ts
+
+//One more quick note about working with the like operator.There may be times you actually want to match a percent sign a book with a percent sign in it.
+
+//to target a percet sign we need to use '% /% %'
+-- To select books with '%' in their title:
+SELECT * FROM books
+WHERE title LIKE '%\%%';
+
+-- To select books with an underscore '_' in title:
+SELECT * FROM books
+WHERE title LIKE '%\_%';
+
+
+```
