@@ -117,3 +117,24 @@ SELECT title FROM books LIMIT 5, 123219476457;
 
 SELECT title FROM books LIMIT 5, 50;
 ```
+
+#LIKE
+
+```ts
+
+//But a lot of the time we may want to perform some fuzzier searching where it's not based only on an exact match, and that's where LIKE comes in.
+
+SELECT title, author_fname, author_lname, pages
+FROM books
+WHERE author_fname LIKE '%da%';
+
+SELECT title, author_fname, author_lname, pages
+FROM books
+WHERE title LIKE '%:%';
+
+SELECT * FROM books
+WHERE author_fname LIKE '____';
+
+SELECT * FROM books
+WHERE author_fname LIKE '_a_';
+```
