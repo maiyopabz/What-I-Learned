@@ -10,3 +10,21 @@ INSERT INTO books
            ('Lincoln In The Bardo', 'George', 'Saunders', 2017, 1000, 367);
 
 ```
+
+#DISTINCT
+
+```ts
+//distinct clause which we can use to eliminate duplicate results, only getting distinct results in a query
+
+SELECT author_lname FROM books;
+
+SELECT DISTINCT author_lname FROM books;
+
+SELECT author_fname, author_lname FROM books;
+
+SELECT DISTINCT CONCAT(author_fname,' ', author_lname) FROM books;
+//we if want to look for a distinct fist and last name
+
+SELECT DISTINCT author_fname, author_lname FROM books;
+
+```
