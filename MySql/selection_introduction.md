@@ -76,3 +76,16 @@ WHERE released_year = (SELECT MIN(released_year) FROM books);
 // then the SELECT title, released_year FROM books WHERE released_year =
 //will be run after getting the output from the first query.
 ```
+
+# Grouping By Multiple Columns
+
+```ts
+SELECT author_fname, author_lname, COUNT(*)
+FROM books
+GROUP BY author_lname, author_fname;
+
+
+SELECT CONCAT(author_fname, ' ', author_lname) AS author,  COUNT(*)
+FROM books
+GROUP BY author;
+```
