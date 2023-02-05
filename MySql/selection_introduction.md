@@ -36,3 +36,23 @@ GROUP BY author_lname
 ORDER BY books_written DESC;
 
 ```
+
+#MIN and MAX Basics
+
+```ts
+SELECT MIN(released_year) FROM books;
+
+SELECT MAX(pages) FROM books;
+//Finding the maximum pages of books.
+
+SELECT MIN(author_lname) FROM books;
+//This will find the lowest of the alphabet
+
+SELECT MIN(author_lname), MAX(author_lname) FROM books;
+// And now we're finding the lowest or the earliest alphabetically and the latest alphabetically.
+
+```
+
+    What if i want the title of the longest book?
+
+#Subquries
