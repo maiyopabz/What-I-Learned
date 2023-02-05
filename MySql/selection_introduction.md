@@ -1,4 +1,6 @@
-#Aggregate Functions # Count Basic
+#Aggregate Functions
+
+# Count Basic
 
 ```ts
 
@@ -11,5 +13,26 @@ SELECT COUNT(author_lname) FROM books;
 
 SELECT COUNT(DISTINCT author_lname) FROM books;
 //How many distinct or unique author first names.
+
+```
+
+#Group By
+
+```ts
+
+// grouped by summarizes or aggregates identical data into single rows.
+
+
+SELECT author_lname, COUNT(*)
+FROM books
+GROUP BY author_lname;
+//Were are selecting the group by author_lname and counting it by Group and not all rows.
+
+SELECT
+    author_lname, COUNT(*) AS books_written
+FROM
+    books
+GROUP BY author_lname
+ORDER BY books_written DESC;
 
 ```
