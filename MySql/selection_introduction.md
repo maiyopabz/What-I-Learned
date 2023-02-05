@@ -53,6 +53,26 @@ SELECT MIN(author_lname), MAX(author_lname) FROM books;
 
 ```
 
-    What if i want the title of the longest book?
-
 #Subquries
+
+```ts
+SELECT tittle, pages FROM books ORDER BY pages DESC LIMIT 1;
+//   What if i want the title of the longest book?
+//this is how
+
+SELECT * FROM books
+WHERE pages = (SELECT Min(pages) FROM books);
+
+SELECT title, pages FROM books
+WHERE pages = (SELECT MAX(pages) FROM books);
+
+SELECT MIN(released_year) FROM books;
+
+SELECT title, released_year FROM books
+WHERE released_year = (SELECT MIN(released_year) FROM books);
+
+//Pretty much running  backwards
+// the (SELECT MIN(released_year) FROM books); runs first and will be replace by the output
+// then the SELECT title, released_year FROM books WHERE released_year =
+//will be run after getting the output from the first query.
+```
