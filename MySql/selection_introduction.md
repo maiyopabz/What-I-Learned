@@ -49,7 +49,8 @@ SELECT MIN(author_lname) FROM books;
 //This will find the lowest of the alphabet
 
 SELECT MIN(author_lname), MAX(author_lname) FROM books;
-// And now we're finding the lowest or the earliest alphabetically and the latest alphabetically.
+// And now we're finding the lowest or the earliest
+//alphabetically and the latest alphabetically.
 
 ```
 
@@ -80,6 +81,8 @@ WHERE released_year = (SELECT MIN(released_year) FROM books);
 # Grouping By Multiple Columns
 
 ```ts
+
+
 SELECT author_fname, author_lname, COUNT(*)
 FROM books
 GROUP BY author_lname, author_fname;
@@ -88,4 +91,7 @@ GROUP BY author_lname, author_fname;
 SELECT CONCAT(author_fname, ' ', author_lname) AS author,  COUNT(*)
 FROM books
 GROUP BY author;
+//best query
+
+
 ```
