@@ -1,6 +1,6 @@
 #Symybolic link Overview
 
-#Moving /var/www/tml to data
+#Moving /var/www/html to data
 
 ```ts
 
