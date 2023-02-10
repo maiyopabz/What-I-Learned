@@ -44,7 +44,7 @@ Other commands
 
 ```
 
-How exactly do you tell the contab command that you want to edit the cron tab for a different user.
+How exactly do you tell the crontab command, that you want to edit the crontab for a different user.
 
 ```ts
 - > crontab -u root e
@@ -58,7 +58,7 @@ How exactly do you tell the contab command that you want to edit the cron tab fo
 #How to fireup cron
 
 ```ts
-* * * * * php /data/html/system_data.php
+* * * * * php /usr/bin/php  /data/html/systemadmin.php "password inserted"
 ```
 
 #how to purge files thats older than 6 days
