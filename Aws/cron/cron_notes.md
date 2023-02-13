@@ -118,3 +118,12 @@ Using Find command
 -  > ./clean.sh
    > cp/var/log/\_.log /var/log/test/
    > touch -a -m -t 202001010909.09 /var/log/test/\*.log
+
+#firing cron on a specific time.
+
+``php
+0 0 \* \* 0-6 php /usr/bin/php /data/html/purge.php bv0EafB2eM8YCoFTzvsbW2q6v2xDKK7ySuLnelCHFKcqNdomBs
+
+```
+
+```
